@@ -1,0 +1,244 @@
+.subnetting-game {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.game-header h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.game-info span {
+    font-size: 1.1rem;
+    color: #666;
+    background: #f8f9fa;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+.exercise-container {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.exercise-info {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.exercise-info h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.exercise-info p {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.answer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #4a5568;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #4299e1;
+    outline: none;
+}
+
+.form-group input:disabled {
+    background: #f8f9fa;
+    cursor: not-allowed;
+}
+
+button {
+    background: #4299e1;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background: #3182ce;
+}
+
+.help-button {
+    background: #4299e1;
+    color: white;
+    width: 36px;
+    height: 36px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: backgr0ound-color 0.2s;
+}
+
+.help-button:hover {
+    background: #3182ce;
+}
+
+.help-panel {
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    width: 400px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    overflow-y: auto;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.help-panel.show {
+    right: 0;
+}
+
+.help-content {
+    text-align: left;
+}
+.help-content section {
+    margin-bottom: 2rem;
+}
+
+.help-content h4 {
+    color: #1764b1;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+.help-panel h3 {
+    color: #0080ff;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.help-content p {
+    color: #2c3e50;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+.help-content li {
+    color: #2c3e50;
+}
+.help-content pre {
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin: 0.5rem 0;
+    font-family: monospace;
+}
+
+.results {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.results h4 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.results p {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.results p.correct {
+    background: #c6f6d5;
+    color: #276749;
+}
+
+.results p.incorrect {
+    background: #fed7d7;
+    color: #9b2c2c;
+}
+
+.game-complete {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.game-complete h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.game-complete p {
+    color: #4a5568;
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .subnetting-game {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .exercise-container {
+        padding: 1rem;
+    }
+
+    .game-info {
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+    }
+}
